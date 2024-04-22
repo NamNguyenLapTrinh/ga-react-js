@@ -1,23 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import ReactGA from "react-ga4";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={() => {
+            ReactGA.event({
+              category: "Schedule",
+              action: "bookmarksClick",
+              label: "bookmarks",
+            });
+          }}
         >
-          Learn React
-        </a>
+          send Ga
+        </button>
       </header>
     </div>
   );
