@@ -12,7 +12,8 @@ function App() {
               {
                 category: "Schedule",
                 action: "click",
-                label: "bookmarks",
+                label: "openTrade",
+                value: 10,
               },
               {
                 params: "openTrade",
