@@ -21,7 +21,7 @@ function App() {
             );
           }}
         >
-          send Ga1
+          send Ga2
         </button>
       </header>
     </div>
