@@ -8,14 +8,19 @@ function App() {
       <header className="App-header">
         <button
           onClick={() => {
-            ReactGA.event({
-              category: "Schedule",
-              action: "bookmarksClick",
-              label: "bookmarks",
-            });
+            ReactGA.event(
+              {
+                category: "Schedule",
+                action: "click",
+                label: "bookmarks",
+              },
+              {
+                params: "openTrade",
+              }
+            );
           }}
         >
-          send Ga
+          send Ga1
         </button>
       </header>
     </div>
